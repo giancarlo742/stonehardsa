@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Granite Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="gg_styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="background_white tile.PNG" class="logo">
+                <nav>
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="Contact Page.html">Contact Us</a></li>
+                     <li><a href="">About</a></li>
+                  </ul>
+                </nav>
+
+                <img src="White Marble Island.PNG" class="menu-icon">
+            </div>
+            <div class="navbar2">
+                <header>
+                    <div class="icon-text">
+                        <span class="iconbar">
+                            <img src="KingOfSpades.jpg" alt="logo">
+                        </span>
+                        <div class="header-text">
+                            <span class="name">Stone Hard</span>
+                        </div>
+                    </div>
+                    
+                </header>
+                <nav>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="containerGG">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="background_white tile.PNG"></div>
+                      <div class="swiper-slide"><img src="KingOfSpades.jpg"></div>
+                      <div class="swiper-slide"><img src="His_Her Sink.PNG"></div>
+    
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>          
+            </div>
+        </div>    
+        
+
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>     
+    </body>
+</html>

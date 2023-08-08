@@ -1,0 +1,468 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*Navigational Bar Syntax*/
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: black;
+}
+
+nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav .navbar .nav-links{
+    height: 100%;
+    line-height: 70px;
+}
+
+nav .navbar .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links .links{
+    display: flex;
+}
+
+nav .navbar .nav-links .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a{
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav .navbar .nav-links .links li .arrow{
+    background: red;
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: white;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+
+nav .navbar .nav-links .links li:hover .galleries-arrow{
+    transform: rotate(180deg);
+
+}
+
+nav .navbar .nav-links .links .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: black;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+
+nav .navbar .nav-links .links .sub-menu li{
+    padding: 0 22px;
+}
+
+nav .navbar .nav-links .links .sub-menu li a{
+    color: white;
+    font-size: 15px;
+    font: 500;
+}
+
+nav .navbar .nav-links .links li:hover .galleries-sub-menu{
+    display: block;
+}
+
+nav .navbar .nav-links .links .galleries-sub-menu li:hover{
+    background: gray;
+    border-radius: 3px;
+}
+
+.sidebar-logo{
+    display: none;
+}
+
+.navbar .bx-menu, .nav-links .sidebar-logo .logo_name, .nav-links .sidebar-logo .bx-x{
+    display: none;    
+}
+
+
+/*Main Body Syntax*/
+
+h3{
+    color: #fff;
+    font-size: 150px;
+    }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(159, 148, 148, 0.7), rgba(84, 80, 80, 0.7)), url("White\ Marble\ Island.PNG");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    background-color: red;
+    height: auto;
+    width: auto;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  
+}
+
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: flex;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+}
+
+.card1 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card2 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card3 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card4 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card5 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card6 img{
+    width: 200px;
+    height: 230px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+    
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+    
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+    
+.picdesign{
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px lightskyblue;
+    
+}
+
+.text-box h1{
+    font-size: 200px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url("pinstripe2.PNG");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 80s linear infinite;
+}
+
+@keyframes back{
+	100%{
+		background-position: 2000px 0;
+	}
+}
+
+/*
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .container{
+        height: auto;
+        width: auto;
+    }
+    
+    .row{
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .col-2{
+        padding-bottom: 50px;
+        padding-right: 50px;
+        display: flex;
+        margin: auto;
+        background-color: yellow;
+        justify-content: center;
+        width: 60%;
+    }
+}
+*/
+
+
+@media screen and (max-width: 1250px) and (min-width: 900px){
+    .container{
+        height: auto;
+        width: auto;
+    }
+    
+    .row{
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .col-2{
+        padding-bottom: 50px;
+        padding-right: 50px;
+        display: flex;
+        margin: auto;
+        background-color: yellow;
+        justify-content: center;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1250px) {
+    .container{
+        height: 150vh;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+        padding-top: 75px;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        padding-bottom: 100px;
+        background-color: yellow;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width:954px) {
+    nav .navbar{
+        max-width: 100%;
+        padding: 0 25px;   
+    }
+
+    nav .navbar .logo a{
+        font-size: 26px;
+    }
+
+    nav .navbar .nav-links .links li{
+        padding: 0 10px;
+    }
+
+    nav .navbar .nav-links .links li a{
+        font-size: 15px;
+    }
+
+    .container{
+        height: auto;
+        width: auto;
+    }
+    
+    .row{
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .col-2{
+        padding-bottom: 50px;
+        padding-right: 50px;
+        display: flex;
+        margin: auto;
+        background-color: yellow;
+        justify-content: center;
+        width: 60%;
+    }
+}
+
+@media (max-width:800px){
+    nav .navbar .nav-links{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        max-width: 270px;
+        width: 100%;
+        background: black;
+        padding: 20px;
+        line-height: 40px;
+        transition: all 0.5s ease;
+        z-index: 100;
+    }
+
+    nav .navbar .nav-links .sidebar-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .navbar .bx-menu, .nav-links .sidebar-logo .logo_name, .nav-links .sidebar-logo .bx-x{
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .navbar .bx-menu, .nav-links .sidebar-logo .logo_name, .nav-links .sidebar-logo .bx-x{
+        display: block;
+    }
+
+    nav .navbar .nav-links .links{
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .navbar .nav-links .links li{
+        display: block;
+        border-bottom: none;
+    }
+
+    nav .navbar .nav-links .links .sub-menu{
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    nav .navbar .nav-links .links li:hover .galleries-sub-menu{
+        display: block;
+    }
+
+    nav .navbar .nav-links .links li .arrow{
+        line-height: 40px;
+    }
+
+    nav .navbar .nav-links .links li:hover .galleries-sub-menu{
+        transform: rotate(0deg);
+    }
+
+}
+
+@media (max-width: 370px) {
+    nav .navbar .nav-links{
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+

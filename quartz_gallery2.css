@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Navigation Bar CSS */
+
+.navcontainer{
+    width: 100%;
+    background-color: black ;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+    
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+    
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px; 
+}
+    
+nav{
+    flex: 1;
+    text-align: right;
+}
+    
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+    
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+nav ul li:hover {
+    background: gray;
+    border-radius: 3px;
+
+}
+
+.sub-menu-1{
+    display: none;
+
+}
+
+.navbar nav ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.navbar nav ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+
+
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+        
+h1::before{
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.materialDesc {
+    width: 75%;
+    margin: 10px 10px;
+    padding: 5px;
+    background-color: yellow;
+
+}
+
+.materialDesc h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    height: 500px;
+    width: 90%;
+    margin: 50px 50px;
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    background-color: lightgreen;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left {
+    left: -30px;
+}
+
+.carousel_button--right {
+    right: -30px;
+}
+
+.carousel_button img {
+    width: 20px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgb(0,0,0,.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel_indicator .current-slide {
+    background: rgba(0,0,0,.75); 
+}
+
+@media (max-width: 991px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 80%;
+        height: 400px;
+    }
+    
+}
+
+/*Photo Gallery CSS*/
+.photoContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background-color: grey;
+}
+
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(159, 148, 148, 0.7), rgba(84, 80, 80, 0.7)), url("White\ Marble\ Island.PNG");
+}
+
+.headcontainer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background-color: grey;
+
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+
+}
+
+.gallery img{
+    width: 100%;
+}
+
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}

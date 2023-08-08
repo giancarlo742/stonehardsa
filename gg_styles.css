@@ -1,0 +1,123 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navbar2-color: black;
+}
+
+/*
+.containerGG {
+    width: 100%;
+    height: 80vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+.swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.swiper-slide img{
+    width: 75%;
+    height: 75vh;
+    display: flex;
+    padding-left: 250px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: red;
+
+}
+
+.swiper .swiper-button-prev{
+    padding-left: 200px;
+}
+
+.swiper .swiper-button-next{
+    padding-right: 200px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(159, 148, 148, 0.7), rgba(84, 80, 80, 0.7)), url("White\ Marble\ Island.PNG");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+height: 12%;
+display: flex;
+align-items: center;
+}
+
+.logo{
+width: 50px;
+cursor: pointer;
+}
+
+.menu-icon{
+width: 30px;
+cursor: pointer;
+margin-left: 40px; 
+}
+
+nav{
+flex: 1;
+text-align: right;
+}
+
+nav ul li{
+list-style: none;
+display: inline-block;
+margin-left: 60px;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 13px;
+}
+
+.name{
+    color: white;
+}
+
+.navbar2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding: 10px 14px;
+    background: var(--navbar2-color);
+
+}
+
+.navbar2 .icon-text img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.navbar2 header .icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.navbar2 header .header-text{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
